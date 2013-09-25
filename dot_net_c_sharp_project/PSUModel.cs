@@ -12,11 +12,13 @@ namespace dot_net_c_sharp_project
 
         private String name;
 
-        private String manufacturer;
+        private String madeby;
 
         private String model;
 
         private double price;
+
+        private int energy;
 
         public long Id
         {
@@ -36,16 +38,22 @@ namespace dot_net_c_sharp_project
             set { price = value; }
         }
 
-        public String Manufacturer
+        public String Madeby
         {
-            get { return manufacturer; }
-            set { manufacturer = value; }
+            get { return madeby; }
+            set { madeby = value; }
         }
 
         public String Model
         {
             get { return model; }
             set { model = value; }
+        }
+
+        public int Energy
+        {
+            get { return energy; }
+            set { energy = value; }
         }
     }
 }

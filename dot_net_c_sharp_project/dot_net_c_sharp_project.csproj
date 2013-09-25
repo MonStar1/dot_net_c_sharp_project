@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputerModel.cs" />
+    <Compile Include="MotherboardModel.cs" />
+    <Compile Include="ProcessorModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PSUModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace dot_net_c_sharp_project
 {
+    public enum Socket
+    {
+        AM2,
+        AM3
+    }
     class ProcessorModel
     {
         private long id;
 
         private String name;
 
-        private String manufacturer;
+        private String madeby;
 
         private String model;
 
@@ -21,6 +26,8 @@ namespace dot_net_c_sharp_project
         private double cpuSpeed;
 
         private double cache;
+
+        private Socket socket;
 
         public long Id
         {
@@ -40,16 +47,34 @@ namespace dot_net_c_sharp_project
             set { price = value; }
         }
 
-        public String Manufacturer
+        public String Madeby
         {
-            get { return manufacturer; }
-            set { manufacturer = value; }
+            get { return madeby; }
+            set { madeby = value; }
         }
 
         public String Model
         {
             get { return model; }
             set { model = value; }
+        }
+
+        public double CpuSpeed
+        {
+            get { return cpuSpeed; }
+            set { cpuSpeed = value; }
+        }
+
+        public double Cache
+        {
+            get { return cache; }
+            set { cache = value; }
+        }
+
+        public Socket Socket
+        {
+            get { return socket; }
+            set { socket = value; }
         }
     }
 }
