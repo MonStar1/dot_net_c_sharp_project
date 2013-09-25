@@ -41,13 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrator.cs" />
     <Compile Include="ComputerModel.cs" />
+    <Compile Include="Moderator.cs" />
     <Compile Include="MotherboardModel.cs" />
     <Compile Include="MouseModel.cs" />
     <Compile Include="ProcessorModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PSUModel.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
