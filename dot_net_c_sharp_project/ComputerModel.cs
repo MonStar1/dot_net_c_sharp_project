@@ -23,8 +23,9 @@ namespace dot_net_c_sharp_project
         //-----TODO: add new model of example
 
         //private VideocardModel video;
-        //private KeyboardModel keyboard;
-        //private MouseModel mouse;
+        private KeyboardModel keyboard;
+        
+        private MouseModel mouse;
         //pribate HDDModel hdd;
 
         public long Id
@@ -62,5 +63,18 @@ namespace dot_net_c_sharp_project
             get { return psu; }
             set { psu = value; }
         }
+
+        public KeyboardModel Keyboard
+        {
+            get { return keyboard; }
+            set { keyboard = value; }
+        }
+
+        public MouseModel Mouse
+        {
+            get { return mouse; }
+            set { mouse = value; }
+        }
+
     }
 }

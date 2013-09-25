@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ComputerModel.cs" />
     <Compile Include="MotherboardModel.cs" />
+    <Compile Include="MouseModel.cs" />
     <Compile Include="ProcessorModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
