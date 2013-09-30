@@ -8,7 +8,7 @@ Models
 
 andrei  -  1. Товар - Product - поля: name, madeby, price, id_attributes(List), description  
 
-		   2. Аттрибуты - Attribute - поля: memory, dpi, cpuSpeed, cache, socket and etc.   
+Shahka	   2. Аттрибуты - Attribute - поля: memory, dpi, cpuSpeed, cache, socket and etc.   
 		   
 nastia  -  3. Пользователь - User - поля: name, login, password, id_role   
 
@@ -22,11 +22,11 @@ andrei  -  7. Заказ - Order - поля: id_user, time, id_products(List), s
 
            8. Скидки - Discount - поля: percent, id_product
 		   
-           9. Категории - Category - поля: name, id_products(List), id_computer
+Sashaka    9. Категории - Category - поля: name, id_products(List), id_computer
 		   
            10. Правила доступа - Rule - поля: description
 		   
-           11. Кредит - Credit - поля: price, percent, time_start, time_end
+Sashka     11. Кредит - Credit - поля: price, percent, time_start, time_end
 		   
 andrei  -  12. Доставка - Delivery - поля: address, price, time_max  
 

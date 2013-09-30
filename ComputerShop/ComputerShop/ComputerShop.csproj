@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComputerModel.cs" />
+    <Compile Include="AttributeModel.cs" />
+    <Compile Include="CategoryModel.cs" />
+    <Compile Include="CreditModel.cs" />
     <Compile Include="DeliveryModel.cs" />
     <Compile Include="OrderModel.cs" />
     <Compile Include="ProductModel.cs" />
