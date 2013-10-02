@@ -16,8 +16,8 @@ namespace ComputerShop
             set { id = value; }
         }
 
-        private long percent;
-        public long Percent
+        private double percent;
+        public double Percent
         {
             get { return percent; }
             set { percent = value; }
