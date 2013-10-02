@@ -46,11 +46,14 @@
     <Compile Include="CategoryModel.cs" />
     <Compile Include="CreditModel.cs" />
     <Compile Include="DeliveryModel.cs" />
+    <Compile Include="DiscountModel.cs" />
     <Compile Include="OrderModel.cs" />
+    <Compile Include="PreviousPriceModel.cs" />
     <Compile Include="ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleModel.cs" />
+    <Compile Include="RulesModel.cs" />
     <Compile Include="UserModel.cs" />
   </ItemGroup>
   <ItemGroup>

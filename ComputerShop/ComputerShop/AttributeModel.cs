@@ -14,7 +14,7 @@ namespace ComputerShop
 
         public string Memory
         {
-            get { return memoremodule; }
+            get { return memorymodule; }
             set { memorymodule = value; }
         }
 
@@ -96,7 +96,7 @@ namespace ComputerShop
         public long ScreenRefreshRate
         {
             get { return screenrefreshrate; }
-            set { screenrefrashrate = value; }
+            set { screenrefreshrate = value; }
         }
 
         //Общие поля
