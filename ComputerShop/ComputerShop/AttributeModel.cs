@@ -12,7 +12,7 @@ namespace ComputerShop
 
         private string memorymodule;//Тип памяти(DD2...)
 
-        public string Memory
+        public string MemoryModule
         {
             get { return memorymodule; }
             set { memorymodule = value; }
