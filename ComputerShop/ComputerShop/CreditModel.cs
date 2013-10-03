@@ -24,20 +24,28 @@ namespace ComputerShop
             set { percent = value; }
         }
 
-        private timestamp time_start;
+        private long time_start;
 
-        public timestamp Time_Start
+        public long Time_Start
         {
             get { return time_start; }
             set { time_start = value; }
         }
 
-        private timestamp time_end;
+        private long time_end;
 
-        public timestamp Time_End
+        public long Time_End
         {
             get { return time_end; }
             set { time_end = value; }
+        }
+
+        private String timeAsString;
+
+        public String TimeAsString
+        {
+            get { return timeAsString; }
+            set { timeAsString = value; }
         }
     }
 }
