@@ -16,7 +16,7 @@ dot_net_c_sharp_project
 
 
 Связки. Скорее всего в модели выносить не нужно
-=======================
+===
 ПродуктАтрибут     - ProductAttribute     -  id, id_product, id_attrubute
 =======================
 КомпьютерПродукт   - ComputerProduct      -  id, id_computer, id_product
