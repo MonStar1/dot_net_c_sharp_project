@@ -1,32 +1,34 @@
 dot_net_c_sharp_project
 =======================
 
-dot_net_c_sharp_project
+1. Продукт (Товар)    - Product              -  id(float), name(string), price(double), description(string), id_product_attribute
+2. Атрибут            - Attribute            -  id, name, description(string)
+3. Компьютер          - Computer             -  id, price, description
+4. Категории          - Category             -  id, name
+5. Пользователь       - User                 -  id, login(string), password(string), firstname(string), secondname(string)
+6. Роль               - Role                 -  id, name, description
+7. Кредит             - Credit               -  id, price, percent(double), time_start(long), time_end(long)
+8. Скидки             - Discount             -  id, percent, time_start(long), time_end(long)
+9. Доставка           - Delivery             -  id, address(string), price, time_max(long)
+10. Корзина           - Baskets              -  id, count(int), time(long), status(ENUM), total_price(double)
+11. Заказ             - Order                -  id, id_user, id_baskets, id_delivery
+12. Новости			  - News                 -  id, shortdescription(string), longdescription(string), time
 
-Models
-У всех моделей есть поле long id
 
-andrei  -  1. Товар - Product - поля: name, madeby, price, id_attributes(List), description  
+Связки. Скорее всего в модели выносить не нужно
+ПродуктАтрибут     - ProductAttribute     -  id, id_product, id_attrubute
+КомпьютерПродукт   - ComputerProduct      -  id, id_computer, id_product
+КатегорияПродукт   - CategoryProduct      -  id, id_category, id_product
+КатегорияКомпьютер - CategoryComputer     -  id, id_category, id_computer
+ПользовательРоль   - UserRoles            -  id, id_user, id_role
+ПродуктСкидки      - ProductDiscount      -  id, id_product, id_discount
+ПродуктКорзина     - ProductBaskets       -  id, id_product, id_baskets
 
-Shahka	   2. Аттрибуты - Attribute - поля: memory, dpi, cpuSpeed, cache, socket and etc.   
-		   
-nastia  -  3. Пользователь - User - поля: name, login, password, id_role   
+Продукт может иметь несколько атрибутов. Если продукт Видеокарта, атрибуты память, скорость, потребление энергии и т.д.
+Компьютер это просто набор продуктов по своей цене
+Каждая категория имеет набор продуктов или компьютеров
+У пользователя может быть одна или несколько ролей (фиг знает зачем несколько, и одной хватит), но связь через промежуточную таблицу всё равно. Правила для ролей убраны, хотя это менее логично.
+Теперь заказ связывает юзера с корзиной, в которой будут храниться его продукты
+На главной странице добавим новости, если понадобится всё таки разделить роли как раньше (используя правила) выкинем новости
 
-nastia  -  4. Роль - Role - поля: access, id_rule(List) 
-
-nastia  -  5. Полный комп - Computer - поля: id_products(List), description 
-
-           6. Предыдущая цена - PreviewPrice - поля: id_product, time_start, time_end
-		   
-andrei  -  7. Заказ - Order - поля: id_user, time, id_products(List), summery_price, id_discount, id_credit, id_delivery, id_computers(List) 
-
-           8. Скидки - Discount - поля: percent, id_product
-		   
-Sashaka    9. Категории - Category - поля: name, id_products(List), id_computer
-		   
-           10. Правила доступа - Rule - поля: description
-		   
-Sashka     11. Кредит - Credit - поля: price, percent, time_start, time_end
-		   
-andrei  -  12. Доставка - Delivery - поля: address, price, time_max  
 
