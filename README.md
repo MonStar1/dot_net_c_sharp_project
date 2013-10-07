@@ -2,8 +2,8 @@ dot_net_c_sharp_project
 =======================
 1-4 забираю себе (Настя)
 
-1. Продукт (Товар)    - Product              -  id(float), name(string), price(double), description(string), id_product_attribute
-2. Атрибут            - Attribute            -  id, name, description(string)
+1. Продукт (Товар)    - Product              -  id (long), name(string), price(double), description(string)
+2. Атрибут            - Attribute            -  id, name, description
 3. Компьютер          - Computer             -  id, price, description
 4. Категории          - Category             -  id, name
 5. Пользователь       - User                 -  id, login(string), password(string), firstname(string), secondname(string)
