@@ -1,5 +1,6 @@
 dot_net_c_sharp_project
 =======================
+1-4 забираю себе (Настя)
 
 1. Продукт (Товар)    - Product              -  id(float), name(string), price(double), description(string), id_product_attribute
 2. Атрибут            - Attribute            -  id, name, description(string)
