@@ -8,14 +8,13 @@ namespace ComputerShop
 {
     class ProductModel
     {
-        private float id;
+        private long id;
 
-        public float Id
+        public long Id
         {
             get { return id; }
             set { id = value; }
         }
-
         private String name;
 
         public String Name

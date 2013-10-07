@@ -8,9 +8,9 @@ namespace ComputerShop
 {
     class CategoryModel
     {
-        private float id;
+        private long id;
 
-        public float Id
+        public long Id
         {
             get { return id; }
             set { id = value; }
