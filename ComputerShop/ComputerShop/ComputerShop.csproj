@@ -44,16 +44,17 @@
     <Compile Include="ComputerModel.cs" />
     <Compile Include="AttributeModel.cs" />
     <Compile Include="CategoryModel.cs" />
-    <Compile Include="CreditModel.cs" />
+    <Compile Include="Credit.cs" />
     <Compile Include="DeliveryModel.cs" />
-    <Compile Include="DiscountModel.cs" />
+    <Compile Include="Discount.cs" />
     <Compile Include="OrderModel.cs" />
     <Compile Include="PreviousPriceModel.cs" />
     <Compile Include="ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoleModel.cs" />
+    <Compile Include="Role.cs" />
     <Compile Include="RulesModel.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="UserModel.cs" />
   </ItemGroup>
   <ItemGroup>
