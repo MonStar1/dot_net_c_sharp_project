@@ -15,7 +15,6 @@ namespace ComputerShop
             get { return id; }
             set { id = value; }
         }
-
         private String name;
 
         public String Name
@@ -24,17 +23,10 @@ namespace ComputerShop
             set { name = value; }
         }
 
-        private String madeBy;
 
-        public String MadeBy
-        {
-            get { return madeBy; }
-            set { madeBy = value; }
-        }
+        private double price;
 
-        private long price;
-
-        public long Price
+        public double Price
         {
             get { return price; }
             set { price = value; }
@@ -48,22 +40,5 @@ namespace ComputerShop
             set { description = value; }
         }
 
-        private List<long> idAttributes = new List<long>();
-
-        public List<long> IdAttributes
-        {
-            get { return idAttributes; }
-            set { idAttributes = value; }
-        }
-
-        public void addIdAttribute(long id)
-        {
-            idAttributes.Add(id);
-        }
-
-        public bool removeIdAttribute(long id)
-        {
-            return idAttributes.Remove(id);
-        }
     }
 }
