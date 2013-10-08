@@ -15,6 +15,10 @@ namespace ComputerShop
             set { id = value; }
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a55cc2c8666a7e549dc73071483bf52d02aab018
         private string login;
         public string Login
         {

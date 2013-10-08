@@ -23,13 +23,14 @@ namespace ComputerShop
             get { return name; }
             set { name = value; }
         }
-         private String description;
+        private String description;
 
         public String Description
         {
             get { return description; }
             set { description = value; }
 
-       
+
+        }
     }
 }
