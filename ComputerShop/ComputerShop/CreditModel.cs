@@ -25,10 +25,6 @@ namespace ComputerShop
         }
 
         private long time_start;
-<<<<<<< HEAD:ComputerShop/ComputerShop/CreditModel.cs
-=======
-
->>>>>>> a55cc2c8666a7e549dc73071483bf52d02aab018:ComputerShop/ComputerShop/CreditModel.cs
         public long Time_Start
         {
             get { return time_start; }
@@ -36,25 +32,11 @@ namespace ComputerShop
         }
 
         private long time_end;
-<<<<<<< HEAD:ComputerShop/ComputerShop/CreditModel.cs
-=======
-
->>>>>>> a55cc2c8666a7e549dc73071483bf52d02aab018:ComputerShop/ComputerShop/CreditModel.cs
         public long Time_End
         {
             get { return time_end; }
             set { time_end = value; }
         }
 
-<<<<<<< HEAD:ComputerShop/ComputerShop/CreditModel.cs
-=======
-        private String timeAsString;
-
-        public String TimeAsString
-        {
-            get { return timeAsString; }
-            set { timeAsString = value; }
-        }
->>>>>>> a55cc2c8666a7e549dc73071483bf52d02aab018:ComputerShop/ComputerShop/CreditModel.cs
     }
 }
