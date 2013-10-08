@@ -6,20 +6,14 @@ using System.Threading.Tasks;
 
 namespace ComputerShop
 {
-    class Credit
+    class DiscountModel
     {
+
         private long id;
         public long Id
         {
             get { return id; }
             set { id = value; }
-        }
-
-        private long price;
-        public long Price
-        {
-            get { return price; }
-            set { price = value; }
         }
 
         private double percent;

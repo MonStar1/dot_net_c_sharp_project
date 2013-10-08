@@ -6,24 +6,26 @@ using System.Threading.Tasks;
 
 namespace ComputerShop
 {
-    class Discount
+    class CreditModel
     {
+        private long price;
 
-        private long id;
-        public long Id
+        public long Price
         {
-            get { return id; }
-            set { id = value; }
+            get { return price; }
+            set { price = value; }
         }
 
-        private double percent;
-        public double Percent
+        private long percent;
+
+        public long Percent
         {
             get { return percent; }
             set { percent = value; }
         }
 
         private long time_start;
+
         public long Time_Start
         {
             get { return time_start; }
@@ -31,11 +33,19 @@ namespace ComputerShop
         }
 
         private long time_end;
+
         public long Time_End
         {
             get { return time_end; }
             set { time_end = value; }
         }
 
+        private String timeAsString;
+
+        public String TimeAsString
+        {
+            get { return timeAsString; }
+            set { timeAsString = value; }
+        }
     }
 }

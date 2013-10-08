@@ -15,22 +15,14 @@ namespace ComputerShop
             get { return id; }
             set { id = value; }
         }
-        private List<long> id_products = new List<long>();
-        public List<long> Id_products
+
+        private double price;
+        public double Price
         {
-            get { return id_products; }
-            set { id_products = value; }
+            get { return price; }
+            set { price = value; }
         }
 
-        public void addId_products(long id)
-        {
-            id_products.Add(id);
-        }
-
-        public bool removeId_products(long id)
-        {
-            return id_products.Remove(id);
-        }
         private String description;
         public String Description
         {
