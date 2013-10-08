@@ -8,24 +8,28 @@ namespace ComputerShop
 {
     class CreditModel
     {
-        private long price;
+        private long id;
+        public long Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
 
+        private long price;
         public long Price
         {
             get { return price; }
             set { price = value; }
         }
 
-        private long percent;
-
-        public long Percent
+        private double percent;
+        public double Percent
         {
             get { return percent; }
             set { percent = value; }
         }
 
         private long time_start;
-
         public long Time_Start
         {
             get { return time_start; }
@@ -33,19 +37,11 @@ namespace ComputerShop
         }
 
         private long time_end;
-
         public long Time_End
         {
             get { return time_end; }
             set { time_end = value; }
         }
 
-        private String timeAsString;
-
-        public String TimeAsString
-        {
-            get { return timeAsString; }
-            set { timeAsString = value; }
-        }
     }
 }

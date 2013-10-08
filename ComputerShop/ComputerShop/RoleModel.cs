@@ -9,34 +9,24 @@ namespace ComputerShop
     class RoleModel
     {
         private long id;
-
         public long Id
         {
             get { return id; }
             set { id = value; }
         }
-        private short access;
-        public short Access
+        private string name;
+        public string Name
         {
-            get { return access; }
-            set { access = value; }
+            get { return name; }
+            set { name = value; }
         }
-        private List<long> id_rule = new List<long>();
-        public List<long> Id_rule
+        private string description;
+        public string Description
         {
-            get { return id_rule; }
-            set { id_rule = value; }
-        }
-
-        public void addId_rule(long id)
-        {
-            id_rule.Add(id);
+            get { return description; }
+            set { description = value; }
         }
 
-        public bool removeId_rule(long id)
-        {
-            return id_rule.Remove(id);
-        }
 
     }
 }
