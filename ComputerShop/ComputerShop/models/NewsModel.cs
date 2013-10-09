@@ -32,6 +32,9 @@ namespace ComputerShop
             set { longdescription = value; }
         }
 
-
+        public string ToString()
+        {
+            return id + " " + shortdescription + " " + longdescription;
+        }
     }
 }

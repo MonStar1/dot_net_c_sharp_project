@@ -41,13 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="commands\CommandHelper.cs" />
     <Compile Include="models\ComputerModel.cs" />
     <Compile Include="models\AttributeModel.cs" />
     <Compile Include="models\CategoryModel.cs" />
     <Compile Include="models\CreditModel.cs" />
     <Compile Include="models\DeliveryModel.cs" />
     <Compile Include="models\DiscountModel.cs" />
+    <Compile Include="models\impl\AttrubyteModelImpl.cs" />
+    <Compile Include="models\impl\ExecuteCommand.cs" />
+    <Compile Include="models\impl\HelpCommand.cs" />
+    <Compile Include="models\impl\ListCommand.cs" />
+    <Compile Include="models\impl\NewsImpl.cs" />
     <Compile Include="models\OrderModel.cs" />
+    <Compile Include="models\override.cs" />
     <Compile Include="models\ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,9 +66,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="console\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
