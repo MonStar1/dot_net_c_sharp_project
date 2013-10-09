@@ -41,20 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputerModel.cs" />
-    <Compile Include="AttributeModel.cs" />
-    <Compile Include="CategoryModel.cs" />
-    <Compile Include="CreditModel.cs" />
-    <Compile Include="DeliveryModel.cs" />
-    <Compile Include="DiscountModel.cs" />
-    <Compile Include="OrderModel.cs" />
-    <Compile Include="ProductModel.cs" />
+    <Compile Include="models\ComputerModel.cs" />
+    <Compile Include="models\AttributeModel.cs" />
+    <Compile Include="models\CategoryModel.cs" />
+    <Compile Include="models\CreditModel.cs" />
+    <Compile Include="models\DeliveryModel.cs" />
+    <Compile Include="models\DiscountModel.cs" />
+    <Compile Include="models\OrderModel.cs" />
+    <Compile Include="models\ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoleModel.cs" />
-    <Compile Include="UserModel.cs" />
-    <Compile Include="BasketsModel.cs" />
-    <Compile Include="NewsModel.cs" />
+    <Compile Include="models\RoleModel.cs" />
+    <Compile Include="models\UserModel.cs" />
+    <Compile Include="models\BasketsModel.cs" />
+    <Compile Include="models\NewsModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
