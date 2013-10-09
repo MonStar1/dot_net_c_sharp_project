@@ -16,86 +16,28 @@ namespace ComputerShop
             set { id = value; }
         }
 
-        private long summeryPrice;
+        private long id_user;
 
-        public long SummeryPrice
+        public long Id_user
         {
-            get { return summeryPrice; }
-            set { summeryPrice = value; }
+            get { return id_user; }
+            set { id_user = value; }
         }
 
+        private long id_baskets;
 
-        private long idUser;
-
-        public long IdUser
+        public long Id_baskets
         {
-            get { return idUser; }
-            set { idUser = value; }
+            get { return id_baskets; }
+            set { id_baskets = value; }
         }
+ 
+        private long id_delivery;
 
-
-
-        private List<long> idProducts = new List<long>();
-
-        public List<long> IdProducts
+        public long Id_delivery
         {
-            get { return idProducts; }
-            set { idProducts = value; }
+            get { return id_delivery; }
+            set { id_delivery = value; }
         }
-
-        public void addIdProducts(long id)
-        {
-            idProducts.Add(id);
-        }
-
-        public bool removeIdProducts(long id)
-        {
-            return idProducts.Remove(id);
-        }
-
-        private long idDiscount;
-
-        public long IdDiscount
-        {
-            get { return idDiscount; }
-            set { idDiscount = value; }
-        }
-
-
-        private long idCredit;
-
-        public long IdCredit
-        {
-            get { return idCredit; }
-            set { idCredit = value; }
-        }
-
-        private long idDelivery;
-
-        public long IdDelivery
-        {
-            get { return idDelivery; }
-            set { idDelivery = value; }
-        }
-
-
-        private List<long> idComputers = new List<long>();
-
-        public List<long> IdComputers
-        {
-            get { return idComputers; }
-            set { idComputers = value; }
-        }
-
-        public void addIdComputers(long id)
-        {
-            idComputers.Add(id);
-        }
-
-        public bool removeIdComputers(long id)
-        {
-            return idComputers.Remove(id);
-        }
-
     }
 }

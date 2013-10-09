@@ -32,22 +32,13 @@ namespace ComputerShop
             set { price = value; }
         }
 
-        private long time;
+        private long time_max;
 
-        public long Time
+        public long Time_max
         {
-            get { return time; }
-            set { time = value; }
+            get { return time_max; }
+            set { time_max = value; }
         }
-
-        private String timeAsString;
-
-        public String TimeAsString
-        {
-            get { return timeAsString; }
-            set { timeAsString = value; }
-        }
-
 
     }
 }
