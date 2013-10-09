@@ -24,14 +24,6 @@ namespace ComputerShop
             set { time = value; }
         }
 
-    private ENUM status;
-
-    public ENUM Status
-        {
-            get { return status; }
-            set { status = value; }
-        }
-
     private double total_price;
 
     public double Total_price

@@ -18,7 +18,7 @@ namespace ComputerShop
 
         private string shortdescription;
 
-        public string shortdescription
+        public string Shortdescription
         {
             get { return shortdescription; }
             set { shortdescription = value; }
@@ -26,10 +26,12 @@ namespace ComputerShop
 
         private string longdescription;
 
-        public string longdescription
+        public string Longdescription
         {
             get { return longdescription; }
             set { longdescription = value; }
         }
+
+
     }
 }

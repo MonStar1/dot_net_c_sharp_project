@@ -44,24 +44,23 @@
     <Compile Include="ComputerModel.cs" />
     <Compile Include="AttributeModel.cs" />
     <Compile Include="CategoryModel.cs" />
-    <Compile Include="console\ConsoleHelper.cs" />
-    <Compile Include="console\ModelWriter.cs" />
     <Compile Include="CreditModel.cs" />
     <Compile Include="DeliveryModel.cs" />
     <Compile Include="DiscountModel.cs" />
     <Compile Include="OrderModel.cs" />
-    <Compile Include="PreviousPriceModel.cs" />
     <Compile Include="ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleModel.cs" />
-    <Compile Include="RulesModel.cs" />
     <Compile Include="UserModel.cs" />
-	<Compile Include="BasketsModel.cs" />
-	<Compile Include="NewsModel.cs" />
+    <Compile Include="BasketsModel.cs" />
+    <Compile Include="NewsModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="console\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
