@@ -44,6 +44,8 @@
     <Compile Include="ComputerModel.cs" />
     <Compile Include="AttributeModel.cs" />
     <Compile Include="CategoryModel.cs" />
+    <Compile Include="console\ConsoleHelper.cs" />
+    <Compile Include="console\ModelWriter.cs" />
     <Compile Include="CreditModel.cs" />
     <Compile Include="DeliveryModel.cs" />
     <Compile Include="DiscountModel.cs" />

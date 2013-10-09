@@ -29,8 +29,6 @@ namespace ComputerShop
         {
             get { return description; }
             set { description = value; }
-
-
         }
     }
 }
