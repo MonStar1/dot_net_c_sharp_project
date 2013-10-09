@@ -13,7 +13,7 @@ namespace ComputerShop
         {
             CommandHelper ch = new CommandHelper();
 
-            args = new string[4];
+           /* args = new string[4];
             args[0] = "/add";
             args[1] = "news";
             args[2] = "1";
@@ -29,10 +29,10 @@ namespace ComputerShop
 
             args = new string[2];
             args[0] = "/show";
-            args[1] = "news";
+            args[1] = "news"; */
             ch.executeCommand(args);
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }

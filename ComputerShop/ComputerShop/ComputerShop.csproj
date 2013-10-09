@@ -49,12 +49,10 @@
     <Compile Include="models\DeliveryModel.cs" />
     <Compile Include="models\DiscountModel.cs" />
     <Compile Include="models\impl\AttrubyteModelImpl.cs" />
-    <Compile Include="models\impl\ExecuteCommand.cs" />
+    <Compile Include="commands\ExecuteCommand.cs" />
     <Compile Include="models\impl\HelpCommand.cs" />
-    <Compile Include="models\impl\ListCommand.cs" />
     <Compile Include="models\impl\NewsImpl.cs" />
     <Compile Include="models\OrderModel.cs" />
-    <Compile Include="models\override.cs" />
     <Compile Include="models\ProductModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

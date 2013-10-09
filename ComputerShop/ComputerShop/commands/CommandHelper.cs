@@ -45,6 +45,12 @@ namespace ComputerShop.commands
                 case ADD:
                     {
                         ExecuteCommand cm = getCommandImpl(args[1]);
+                        if (args.Length == 2)
+                        {
+                            Console.WriteLine(cm.getHelp());
+                            break;
+                        }
+
                         string[] param = new string[args.Length - 2];
                         for (int i = 2; i < args.Length; i++)
                         {

@@ -36,7 +36,7 @@ namespace ComputerShop.models.impl
 
         public string getHelp()
         {
-            throw new NotImplementedException();
+            return "/add " + COMMAND + " [SHORT DESCRIPTION] [LONG DESCRIPTION]";
         }
 
         public string getShow()
