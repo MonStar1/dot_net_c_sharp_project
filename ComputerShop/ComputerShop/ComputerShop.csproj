@@ -48,7 +48,7 @@
     <Compile Include="models\CreditModel.cs" />
     <Compile Include="models\DeliveryModel.cs" />
     <Compile Include="models\DiscountModel.cs" />
-    <Compile Include="models\impl\AttrubyteModelImpl.cs" />
+    <Compile Include="models\impl\AttributeModelImpl.cs" />
     <Compile Include="commands\ExecuteCommand.cs" />
     <Compile Include="models\impl\HelpCommand.cs" />
     <Compile Include="models\impl\NewsImpl.cs" />
