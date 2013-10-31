@@ -28,9 +28,9 @@ dot_net_c_sharp_project
 
 ПользовательРоль   - UserRoles            -  id, id_user, id_role
 
-ПродуктСкидки      - ProductDiscount      -  id, id_product, id_discount
+ПродуктСкидки      - ProductDiscount      -  id, id_product, id_discount (Aleh Akbar)
 
-ПродуктКорзина     - ProductBaskets       -  id, id_product, id_baskets
+ПродуктКорзина     - ProductBaskets       -  id, id_product, id_baskets (Aleh Akbar)
 
 
 Продукт может иметь несколько атрибутов. Если продукт Видеокарта, атрибуты память, скорость, потребление энергии и т.д.
