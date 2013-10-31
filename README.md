@@ -18,11 +18,11 @@ dot_net_c_sharp_project
 
 Связки. Скорее всего в модели выносить не нужно
 
-ПродуктАтрибут     - ProductAttribute     -  id, id_product, id_attrubute
+ПродуктАтрибут     - ProductAttribute     -  id, id_product, id_attrubute (Настя)
 
-КомпьютерПродукт   - ComputerProduct      -  id, id_computer, id_product
+КомпьютерПродукт   - ComputerProduct      -  id, id_computer, id_product (Настя)
 
-КатегорияПродукт   - CategoryProduct      -  id, id_category, id_product
+КатегорияПродукт   - CategoryProduct      -  id, id_category, id_product  (Настя)
 
 КатегорияКомпьютер - CategoryComputer     -  id, id_category, id_computer
 
