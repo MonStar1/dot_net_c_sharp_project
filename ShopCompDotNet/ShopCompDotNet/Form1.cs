@@ -16,5 +16,10 @@ namespace ShopCompDotNet
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Main mainClazz = new Main();
+        }
     }
 }

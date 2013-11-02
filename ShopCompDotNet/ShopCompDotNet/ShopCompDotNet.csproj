@@ -50,8 +50,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="models\ComputerModel.cs" />
+    <Compile Include="models\AttributeModel.cs" />
+    <Compile Include="models\CategoryModel.cs" />
+    <Compile Include="models\CreditModel.cs" />
+    <Compile Include="models\DeliveryModel.cs" />
+    <Compile Include="models\DiscountModel.cs" />
+    <Compile Include="models\OrderModel.cs" />
+    <Compile Include="models\ProductModel.cs" />
+    <Compile Include="models\RoleModel.cs" />
+    <Compile Include="models\UserModel.cs" />
+    <Compile Include="models\BasketsModel.cs" />
+    <Compile Include="models\NewsModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
