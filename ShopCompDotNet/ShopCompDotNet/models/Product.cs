@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComputerShop
+namespace ShopCompDotNet
 {
-    class AttributeModel
+    class Product
     {
         private long id;
 
@@ -15,14 +15,23 @@ namespace ComputerShop
             get { return id; }
             set { id = value; }
         }
+        private String name;
 
-        private string name;
-
-        public string Name
+        public String Name
         {
             get { return name; }
             set { name = value; }
         }
+
+
+        private double price;
+
+        public double Price
+        {
+            get { return price; }
+            set { price = value; }
+        }
+
         private String description;
 
         public String Description
@@ -30,5 +39,6 @@ namespace ComputerShop
             get { return description; }
             set { description = value; }
         }
+
     }
 }
