@@ -9,22 +9,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ShopCompDotNet
 {
     public partial class FormAdd : Form
     {
+        
         public FormAdd()
         {
             InitializeComponent();
+            AddProduct.Configurete();
         }
 
         private void button_ok_Click(object sender, EventArgs e)
         {
-            Product pr = new Product();
-            pr.Id = long.Parse(textBox_id.Text); 
-            pr.Name = textBox_name.Text;
-            pr.Price = long.Parse(textBox_price.Text); 
-            AddCallback.callbackEventHandler(pr);
+            Product prod = new Product();
+         //   prod.Id = int.Parse(textBox_id.Text); 
+            prod.Name = textBox_name.Text;
+            prod.Price = int.Parse(textBox_price.Text);
+            AddProduct.InsertProduct(prod);
+            
             this.Close();
         }
 
@@ -32,6 +36,7 @@ namespace ShopCompDotNet
         {
             this.Close();
         }
+
 
     }
 }

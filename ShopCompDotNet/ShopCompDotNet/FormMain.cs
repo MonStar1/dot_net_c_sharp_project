@@ -1,5 +1,7 @@
-﻿using ShopCompDotNet.callback;
+﻿using NHibernate;
+using ShopCompDotNet.callback;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,40 +18,43 @@ namespace ShopCompDotNet
 
     public partial class FormMain : Form
     {
+        
+
         public FormMain()
         {
             InitializeComponent();
+            AddProduct.CreateTables();
+            AddProduct.Configurete();
+            
+
+        }
+
+        public void viewreason(IList<Product> list)
+        {
+            check.Text = "LOlo";
+            listView1.View = View.Details;
+            listView1.Items.Clear();
+            foreach (Product product in list)
+            {
+                listView1.Items.Add(product.Id.ToString());
+                listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Name);
+                listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Price.ToString());
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            AddCallback.callbackEventHandler = new AddCallback.callbackEvent(this.addProduct);
-            Main mainClazz = new Main();
-            List<Product> listProducts = new List<Product>();
-            for (int i = 0; i < 100; i++)
-            {
-                Product pr = new Product();
-                pr.Id = i;
-                pr.Name = "name";
-                pr.Price = i * 2;
-                listProducts.Add(pr);
-            }
-           
-
+            
             listView1.View = View.Details;
             listView1.Columns.Add("Id");
             listView1.Columns.Add("Name");
             listView1.Columns.Add("Price");
             listView1.Items.Clear();
-
-
         }
 
         private void addProduct(Product product)
         {
-            listView1.Items.Add(product.Id.ToString());
-            listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Name);
-            listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Price.ToString());
+         
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,9 +73,46 @@ namespace ShopCompDotNet
             form.Show();
         }
 
+        
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
         }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            IList<Product> list = AddProduct.FindContacts(1);
+
+            FormMain viewed = new FormMain();
+            viewed.viewreason(list);
+            check.Text = "!";
+
+            //IList<Product> list = AddProduct.FindContacts(1);
+            //listView1.View = View.Details;
+            //listView1.Items.Clear();
+            //foreach (Product product in list)
+            //{
+            //    listView1.Items.Add(product.Id.ToString());
+            //    listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Name);
+            //    listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Price.ToString());
+            //}
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDel form = new FormDel();
+            form.Show();
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUpdate form = new FormUpdate();
+            form.Show();
+        }
+
+
+
+        
     }
 }

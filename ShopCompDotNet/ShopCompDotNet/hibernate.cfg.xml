@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+  <!-- настройки "фабрики"-сессий  -->
+  <session-factory>
+    <!--настрйоки по умолчанию-->
+    <property name="proxyfactory.factory_class">
+      NHibernate.ByteCode.Castle.ProxyFactoryFactory,NHibernate.ByteCode.Castle
+    </property>
+    <property name="connection.provider">
+      NHibernate.Connection.DriverConnectionProvider
+    </property>
+    <!--драйвер для работы с БД-->
+    <property name="connection.driver_class">
+      NHibernate.Driver.MySqlDataDriver
+    </property>
+    <!--строка подключения к БД-->
+    <property name="connection.connection_string">
+      Server=localhost;Database=test;User ID=root;Password=qwerty;
+    </property>
+    <!--диалект (в нашем случае MuSQL5)-->
+    <property name="dialect">NHibernate.Dialect.MySQL5Dialect</property>
+    <!--это свойство понадобиться,если мы захотим ,
+    чтобы sql-скрипт создания БД был скопирован в файл.
+    Т.е. первый аргумент в ф-ии schemaExport.Execute
+    равен true
+    -->
+    
+  </session-factory>
+</hibernate-configuration>

@@ -9,6 +9,6 @@ namespace ShopCompDotNet.callback
     class AddCallback
     {
         public delegate void callbackEvent(Product product);
-        public static callbackEvent callbackEventHandler;
+        //public static callbackEvent callbackEventHandler;
     }
 }

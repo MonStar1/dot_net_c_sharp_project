@@ -6,38 +6,31 @@ using System.Threading.Tasks;
 
 namespace ShopCompDotNet
 {
-    class Product
+    public class Product
     {
-        private long id;
-
-        public long Id
+        public virtual int Id
         {
-            get { return id; }
-            set { id = value; }
+            get;
+            set;
         }
-        private String name;
 
-        public String Name
+        public virtual string Name
         {
-            get { return name; }
-            set { name = value; }
+            get;
+            set;
         }
 
 
-        private double price;
-
-        public double Price
+        public virtual int Price
         {
-            get { return price; }
-            set { price = value; }
+            get;
+            set;
         }
 
-        private String description;
-
-        public String Description
+        public virtual string Description
         {
-            get { return description; }
-            set { description = value; }
+            get;
+            set;
         }
 
     }
