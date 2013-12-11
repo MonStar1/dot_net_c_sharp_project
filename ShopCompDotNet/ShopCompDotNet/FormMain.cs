@@ -1,5 +1,4 @@
 ﻿using NHibernate;
-using ShopCompDotNet.callback;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,24 +13,23 @@ using System.Windows.Forms;
 namespace ShopCompDotNet
 {
 
-    public delegate void Del(string message);
+    public delegate void Del();
 
     public partial class FormMain : Form
     {
-        
+        public static Del updateHandler;
 
         public FormMain()
         {
             InitializeComponent();
             AddProduct.CreateTables();
             AddProduct.Configurete();
-            
+            updateHandler = new Del(updateView);
 
         }
 
         public void viewreason(IList<Product> list)
         {
-            check.Text = "LOlo";
             listView1.View = View.Details;
             listView1.Items.Clear();
             foreach (Product product in list)
@@ -50,11 +48,20 @@ namespace ShopCompDotNet
             listView1.Columns.Add("Name");
             listView1.Columns.Add("Price");
             listView1.Items.Clear();
+            updateView();
         }
 
-        private void addProduct(Product product)
+        public void updateView()
         {
-         
+            IList<Product> list = AddProduct.FindContacts();
+            listView1.View = View.Details;
+            listView1.Items.Clear();
+            foreach (Product product in list)
+            {
+                listView1.Items.Add(product.Id.ToString());
+                listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Name);
+                listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Price.ToString());
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,26 +84,7 @@ namespace ShopCompDotNet
         private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
-        }
-
-        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-            IList<Product> list = AddProduct.FindContacts(1);
-
-            FormMain viewed = new FormMain();
-            viewed.viewreason(list);
-            check.Text = "!";
-
-            //IList<Product> list = AddProduct.FindContacts(1);
-            //listView1.View = View.Details;
-            //listView1.Items.Clear();
-            //foreach (Product product in list)
-            //{
-            //    listView1.Items.Add(product.Id.ToString());
-            //    listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Name);
-            //    listView1.Items[listView1.Items.Count - 1].SubItems.Add(product.Price.ToString());
-            //}
+            updateHandler();
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)

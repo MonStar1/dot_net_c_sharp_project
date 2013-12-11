@@ -15,15 +15,10 @@
     </property>
     <!--строка подключения к БД-->
     <property name="connection.connection_string">
-      Server=localhost;Database=test;User ID=root;Password=qwerty;
+      Server=localhost;Database=test;User ID=root;Password=0776;
     </property>
     <!--диалект (в нашем случае MuSQL5)-->
     <property name="dialect">NHibernate.Dialect.MySQL5Dialect</property>
-    <!--это свойство понадобиться,если мы захотим ,
-    чтобы sql-скрипт создания БД был скопирован в файл.
-    Т.е. первый аргумент в ф-ии schemaExport.Execute
-    равен true
-    -->
     
   </session-factory>
 </hibernate-configuration>

@@ -17,23 +17,17 @@ namespace ShopCompDotNet
             InitializeComponent();
             AddProduct.Configurete();
         }
-        public virtual int k { get; set; }
+
         private void button_ok_Click(object sender, EventArgs e)
         {
-            k = int.Parse(textBox_id_update.Text);
-            for (int i = 1; i < 100; i++)
-            {
-               
-               if (k == i)
-                {
+            int k = int.Parse(textBox_id_update.Text);
                     Product prod = new Product();
-                    prod.Id = int.Parse(textBox_id_update.Text); 
+                    prod.Id = k; 
                     prod.Name = textBox_name.Text;
                     prod.Price = int.Parse(textBox_price.Text);
                     AddProduct.UpdateProduct(prod);
+                    FormMain.updateHandler();
                     this.Close();
-                }
-            }
         }
 
         private void button_cancel_Click(object sender, EventArgs e)

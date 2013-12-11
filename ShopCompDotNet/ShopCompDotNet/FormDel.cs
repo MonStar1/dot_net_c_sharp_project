@@ -24,6 +24,7 @@ namespace ShopCompDotNet
                 Product prod = new Product();
                 prod.Id = int.Parse(textBox_id.Text);
                 AddProduct.DeleteProduct(prod);
+                FormMain.updateHandler();
                 this.Close();
                 
             

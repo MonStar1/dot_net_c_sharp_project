@@ -1,5 +1,4 @@
-﻿using ShopCompDotNet.callback;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,8 +27,9 @@ namespace ShopCompDotNet
             prod.Name = textBox_name.Text;
             prod.Price = int.Parse(textBox_price.Text);
             AddProduct.InsertProduct(prod);
-            
+            FormMain.updateHandler();
             this.Close();
+
         }
 
         private void button_cancel_Click(object sender, EventArgs e)

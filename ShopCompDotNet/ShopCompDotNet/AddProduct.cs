@@ -23,8 +23,7 @@ namespace ShopCompDotNet
             conf.AddClass(typeof(Product));
             try
             {
-                sessions = conf.
-                    BuildSessionFactory();
+                sessions = conf.BuildSessionFactory();
             }
             catch (SocketException ex)
             {
@@ -42,8 +41,8 @@ namespace ShopCompDotNet
             Configuration configuration = new Configuration();
             configuration.Configure();
             configuration.AddClass(typeof(Product));
-            SchemaExport schemaExport = new SchemaExport(configuration);
-            schemaExport.Execute(false, true, false);
+            SchemaUpdate shema = new SchemaUpdate(configuration);
+            shema.Execute(false, true);
         }
 
         public static void InsertProduct(Product prod)
@@ -80,12 +79,11 @@ namespace ShopCompDotNet
         }
 
 
-        public static IList<Product> FindContacts(int Id)
+        public static IList<Product> FindContacts()
         {
             using (ISession sess = sessions.OpenSession())
             {
-                return sess.CreateCriteria(typeof(Product))
-                                .List<Product>();
+                return sess.CreateCriteria(typeof(Product)).List<Product>();
             }
         }
     }
